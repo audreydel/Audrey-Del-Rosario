@@ -6,7 +6,7 @@ import React from 'react';
 const About = () => {
     return (
         <section className={styles.container} id="about" >
-            <h2 className={styles.title}>About</h2>
+            <h2 className={styles.title}>About Me!</h2>
             <div className={styles.content}>
                 <img src={getImageUrl('about/aboutImage.png')} 
                 alt="Me sitting with a laptop" 

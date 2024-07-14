@@ -1,29 +1,38 @@
 [
     {
-      "role": "Software Engineer",
-      "organisation": "Google",
-      "startDate": "Sept, 2022",
+      "role": "Software Engineer & UI Design Intern",
+      "organisation": "Dell Technologies",
+      "startDate": "Jun 2024",
       "endDate": "Present",
-      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-      "imageSrc": "history/google.png"
+      "experiences": ["Developing & designing a workbench platform that consolidates six distinct applications into a unified system."],
+      "imageSrc": "history/dell.png"
     },
     {
-      "role": "UI Designer",
-      "organisation": "Mirosoft",
-      "startDate": "Aug, 2021",
-      "endDate": "Aug, 2022",
+      "role": "Teaching Asssistant",
+      "organisation": "CoderDojo",
+      "startDate": "Nov 2023",
+      "endDate": "Present",
       "experiences": ["Worked on Windows 11", "Designed the control panel"],
-      "imageSrc": "history/microsoft.png"
+      "imageSrc": "history/coder-dojo.png"
     },
     {
-      "role": "SWE Intern",
-      "organisation": "Netflix",
-      "startDate": "Apr, 2020",
-      "endDate": "Jun, 2020",
+      "role": "STEM Aspire Mentee",
+      "organisation": "Dell Technologies",
+      "startDate": "Oct 2023",
+      "endDate": "Apr 2024",
       "experiences": [
-        "Worked on component library",
-        "Helped create UI components"
+        "Paired with an experienced mentor from Dell, receiving personalised guidance and support"
       ],
-      "imageSrc": "history/netflix.png"
+      "imageSrc": "history/dell.png"
+    }, 
+    {
+      "role": "Web Developer & Designer",
+      "organisation": "Project Blue",
+      "startDate": "Nov 2023",
+      "endDate": "Jan 2024",
+      "experiences": [
+        "Paired with an experienced mentor from Dell, receiving personalised guidance and support"
+      ],
+      "imageSrc": "history/projectblue.png"
     }
   ]
