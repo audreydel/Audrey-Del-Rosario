@@ -3,6 +3,7 @@ import skills from '../../data/skills.json';
 import { getImageUrl } from '../../utils';
 import history from '../../data/history.json';
 import styles from './Experience.module.css';
+import Image from 'react-bootstrap/Image';
 
 const Experience = () => {
     return (
@@ -28,8 +29,13 @@ const Experience = () => {
                         history.map((historyItem, id) =>{
                             return (
                                 <li key={id} className={styles.historyItem} >
-                                    <img src={getImageUrl(historyItem.imageSrc)} 
-                                        alt={`${historyItem.organisation} Logo`} />
+                                    <Image src={getImageUrl(historyItem.imageSrc)} 
+                                        alt={`${historyItem.organisation} Logo`} 
+                                        className={styles.image}
+                                        roundedCircle/>
+
+                                    {/* <img src={getImageUrl(historyItem.imageSrc)} 
+                                        alt={`${historyItem.organisation} Logo`} /> */}
                                     <div className={styles.historyItemDetails} >
                                         <h3> {` ${historyItem.role} `} </h3>
                                         <div className={styles.subtitle}>
