@@ -4,7 +4,9 @@
       "organisation": "Dell Technologies",
       "startDate": "Jun 2024",
       "endDate": "Present",
-      "experiences": ["Developing & designing a workbench platform that consolidates six distinct applications into a unified system."],
+      "experiences": [
+
+        "Developing & designing a workbench platform consolidating six distinct applications "],
       "imageSrc": "history/dell.svg"
     },
     {
@@ -13,7 +15,7 @@
       "startDate": "Nov 2023",
       "endDate": "Present",
       "experiences": ["Worked on Windows 11", "Designed the control panel"],
-      "imageSrc": "history/coderdojo.svg"
+      "imageSrc": "history/coder-dojo.png"
     },
     {
       "role": "STEM Aspire Mentee",

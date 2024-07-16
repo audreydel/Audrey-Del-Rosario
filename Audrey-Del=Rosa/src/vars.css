@@ -3,15 +3,16 @@
     --color-text: #4F3729;
     --color-cyan: #00E8C6;
     --color-green: #BACDB0;
-    --color-pink: #FF53D4;
-    --color-purple: #C74DED;
+    --color-pink: #F9B5AC;
+    --color-brown: #C74DED;
     --color-yellow: #FFDDA1;
     
-    --color-primary: #FFDDA1;
-    --color-secondary: #9ab58cee;
+    --color-primary: #F9B5AC;
+    --color-secondary: #FFDDA1;
     --color-dark: #C18C6B;
     --color-bg: #BACDB0;
 
     /* Fonts */
-    --font-roboto: "Roboto";
+    /* --font-roboto: "Roboto"; */
+    --font-prosto-one: "Prosto One"
 }
