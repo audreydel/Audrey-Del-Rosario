@@ -1,7 +1,9 @@
 import { getImageUrl } from '../../utils';
 import styles from './Contact.module.css';
 
-import React from 'react';
+import { MdEmail } from "react-icons/md";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -13,18 +15,29 @@ const Contact = () => {
             </div>
             <ul className={styles.links}>
                 <li className={styles.link}>
-                    <img src={getImageUrl('contact/emailIcon.png')} alt="email icon" />
-                    <a href="mailto:delrosaa@tcd.ie">delrosaa@tcd.ie</a>
+                    <MdEmail className={styles.icon}/>
+                    <a href="mailto:delrosaa@tcd.ie" target="_blank" rel="noopener noreferrer"
+                    >
+                        delrosaa@tcd.ie
+                    </a>
                 </li>
 
                 <li className={styles.link}>
-                    <img src={getImageUrl('contact/linkedinIcon.png')} alt="linkedin icon" />
-                    <a href="https://www.linkedin.com/in/audreydelrosa">linkedin.com/audreydelrosa</a>
+                    <FaLinkedin className={styles.icon}/>
+                    <a href="https://www.linkedin.com/in/audreydelrosa"
+                    target="_blank" rel="noopener noreferrer"
+                    >
+                        linkedin.com/audreydelrosa
+                    </a>
                 </li>
 
                 <li className={styles.link}>
-                    <img src={getImageUrl('contact/githubIcon.png')} alt="github icon" />
-                    <a href="https://github.com/audreydel">github.com/audreydel</a>
+                    <FaGithubSquare className={styles.icon}/>
+                    <a href="https://github.com/audreydel"
+                        target="_blank" rel="noopener noreferrer"
+                    >
+                        github.com/audreydel
+                    </a>
                 </li>
             </ul>
         </footer>
