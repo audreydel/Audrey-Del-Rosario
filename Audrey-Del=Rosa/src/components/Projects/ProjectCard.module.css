@@ -1,63 +1,130 @@
 @import '../../vars.css';
-
+ 
+/* ProjectCard.module.css */
 .container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background: linear-gradient(180deg, var(--color-secondary) 0%, #d2e9c6 100%);
-    box-shadow: 0 16px 14px 0 #041523;
-    padding: 18px 24px;
-    max-width: 345px;
+    position: relative;
+    width: 400px; /* Adjust as per your design */
+    height: 400px; /* Adjust as per your design */
+    perspective: 1000px; /* Perspective for 3D effect */
 }
 
-.image {
-    margin-bottom: 26px;
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
 
+    transform-style: preserve-3d; /* Preserve 3D transformation */
+    transition: transform 0.8s;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide backface of the elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title {
-    font-size: 25px;
-    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+.back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.description {
-    margin-top: 6px;
-    font-size: 25px;
-    font-weight: 400;
+.front {
+    background: linear-gradient(180deg, var(--color-secondary) 0%, #d2e9c6 100%);
+    transform: rotateY(0deg);
+}
+
+.back {
+    background: linear-gradient(180deg, #d2e9c6 0%,  var(--color-secondary) 100%);
+    transform: rotateY(180deg); /* Initially flipped away */
+}
+
+.container:hover .card {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+.image {
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    font-family: var(--font-prosto-one);
 }
 
 .skills {
+    margin-top: 8px;
     width: 100%;
-    margin-top: 14px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 6px;
     list-style: none;
 }
 
 .skill {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     border-radius: 100px;
     background: var(--color-dark);
-    padding: 2px 22px;
+    padding: 4px 16px;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text);
+    line-height: 1.6;
 }
 
 .links {
-    width: 100%;
-    margin-top: 26px;
+    margin-top: 16px;
     display: flex;
-    justify-content: space-around;
-
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .link {
+    display: inline-block;
     text-decoration: none;
     color: var(--color-text);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     border-radius: 100px;
     background: var(--color-primary);
-    padding: 1px 22px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.link:hover {
+    background-color: #E59C92;
+    color: #ffffff;
+    transform: translateY(-2px);
 }

@@ -3,14 +3,15 @@
 .container {
     margin-top: 76px;
     color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* learn to make global titles for titles etc */
 .title {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
+    font-family: var(--font-prosto-one);
     letter-spacing: 1.75px;
     text-transform: uppercase;
 }
@@ -23,5 +24,6 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 100%
+    width: 100%;
+    
 }
