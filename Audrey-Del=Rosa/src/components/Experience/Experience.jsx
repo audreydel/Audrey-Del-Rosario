@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 const Experience = () => {
     return (
         <section className={styles.container}  id='experience' >
-            <h2 className={styles.title}>Experience</h2>
+            <h2 className={styles.title}>⋆ My Experience ⋆</h2>
             <div className={styles.content}>
                 <div className={styles.skills}>
                     {skills.map((skill, id) => {
@@ -33,13 +33,11 @@ const Experience = () => {
                                         alt={`${historyItem.organisation} Logo`} 
                                         className={styles.image}
                                         roundedCircle/>
-
-                                    {/* <img src={getImageUrl(historyItem.imageSrc)} 
-                                        alt={`${historyItem.organisation} Logo`} /> */}
                                     <div className={styles.historyItemDetails} >
                                         <h3> {` ${historyItem.role} `} </h3>
                                         <div className={styles.subtitle}>
-                                            <h4>{` ${historyItem.organisation} |`}</h4>
+                                            <h4>{` ${historyItem.organisation}`}</h4>
+                                            <span className={styles.divider}>|</span>
                                             <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                                         </div>
                                         
