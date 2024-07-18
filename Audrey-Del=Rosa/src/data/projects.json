@@ -2,15 +2,26 @@
     {
       "title": "AI Chatbot",
       "imageSrc": "projects/chatbot.png",
-      "description": "Intelligent Information Ecosystem (I2ECO): A Multi-Agent Crawler System with Access Controlled LLMs and Chat Support",
+      "descriptions": 
+      [
+        "Created an AI ChatBot with department-specific access controls for tailored inquiry capabilities.",
+        "Conducted testing of frontend functionality",
+        "Implemented API" ,
+        "Designed and the developed frontend interface. "
+      ],
       "skills": ["React", "FastAPI", "Python", "QDrant", "OpenAI"],
+
       "demo": "https://www.example.com",
       "source": "https://github.com/audreydel/Company-AI-Chatbot.git"
     },
     {
       "title": "InternNexus",
       "imageSrc": "projects/intern-nexus.png",
-      "description": "Won 1st Place in the Dell EMEA Intern Hackathon. A React based Web Portal for interns to view office statuses, lunchtime availabilities, and add helpful links in one easily accessible place",
+      "descriptions": 
+      [
+        "Winning 1st Place in Dell’s Intern EMEA Hackathon", 
+        "Developed an intern portal to add lunchtimes, remote/in person office days & consolidating all useful links into one place."
+    ],
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://github.com/audreydel/Intern-Nexus.git"
@@ -18,33 +29,22 @@
     {
       "title": "Learn Local",
       "imageSrc": "projects/Learn-Local.png",
-      "description": "Designed &  Deployed a website for a non-profit organisation enabling them to take bookings online",
-      "skills": ["React", "Express", "Node", "Python"],
+      "descriptions": 
+      [
+        "Deploying a website for a non-profit, ‘Learn Local’.", 
+        "Designed and developed the frontend interface. "
+      ],
+      "skills": ["React", "Express", "Node", "Python", "SQL"],
       "demo": "https://www.example.com",
       "source": "https://github.com/audreydel/Learn-Local.git"
     }, 
     {
       "title": "American Flight Analysis",
       "imageSrc": "projects/airyFairy.png",
-      "description": "An interactive application reading, organising & display a data set of 537k of CSVs through bar & pie charts (coded in Java)",
-      "skills": ["React", "Express", "Node", "SQL"],
+      "descriptions": ["An interactive application reading, organising & display a data set of 537k of CSVs"],
+      "skills": ["Java", "Processing"],
       "demo": "https://www.example.com",
       "source": "https://github.com/audreydel/American-Flight-Analysis.git"
-    },
-    {
-      "title": "E-Commerce Website",
-      "imageSrc": "projects/Audreys-Creations.png",
-      "description": "Pending Project",
-      "skills": ["MongoDB", "ExpressJS", "React", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Book Recommender",
-      "imageSrc": "projects/DreamyReads.png",
-      "description": "Pending Project",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
     }
+   
   ]

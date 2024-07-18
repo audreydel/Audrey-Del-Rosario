@@ -13,12 +13,13 @@
 
 .title {
     color: var(--color-text);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     font-family: var(--font-prosto-one);
     letter-spacing: 1.75px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .content {
@@ -56,6 +57,24 @@
 .aboutItem:hover {
     background-size: 100% 100%;
 }
+.aboutItemIconLaptop {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+
+.aboutItemIconNetwork {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.aboutItemIconSew {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
 
 .aboutItem h3 {
     font-size: 20px;
@@ -64,7 +83,8 @@
 }
 
 .aboutItem p {
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width:830px) {
@@ -72,10 +92,17 @@
         background-color: transparent;
         padding-left: 0;
         padding-right: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .content {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
     }
 
     .aboutImage {

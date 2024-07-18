@@ -5,8 +5,9 @@
       "startDate": "Jun 2024",
       "endDate": "Present",
       "experiences": [
-
-        "Developing & designing a workbench platform consolidating six distinct applications "],
+        "Developing & designing a workbench platform consolidating 6 distinct applications into 1 unified space.",
+        "Significantly enhanced navigation process & overall user experience.",
+        "Technologies used: Angular | Figma"],
       "imageSrc": "history/dell.svg"
     },
     {
@@ -14,7 +15,10 @@
       "organisation": "CoderDojo",
       "startDate": "Nov 2023",
       "endDate": "Present",
-      "experiences": ["Worked on Windows 11", "Designed the control panel"],
+      "experiences": [
+        "Lead and support sessions in Game Development, Web Development, Python, and Scratch for a diverse group of young learners.", 
+        "Tailoring material and teaching methods accommodating varied learning styles."
+      ],
       "imageSrc": "history/coder-dojo.png"
     },
     {
@@ -23,7 +27,7 @@
       "startDate": "Oct 2023",
       "endDate": "Apr 2024",
       "experiences": [
-        "Paired with an experienced mentor from Dell, receiving personalised guidance and support"
+        "Paired with an experienced mentor from Dell, receiving personalised guidance and support."
       ],
       "imageSrc": "history/dell.svg"
     }, 
@@ -33,7 +37,8 @@
       "startDate": "Nov 2023",
       "endDate": "Jan 2024",
       "experiences": [
-        "Paired with an experienced mentor from Dell, receiving personalised guidance and support"
+        "Designed and deployed a website for Learn Local, a non-profit organisation providing healthy and sustainable cooking courses.",
+        "Technologies used: React (Front-end) | SQL (Database Management)"
       ],
       "imageSrc": "history/projectblue.png"
     }
