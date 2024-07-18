@@ -3,8 +3,8 @@
 /* ProjectCard.module.css */
 .container {
     position: relative;
-    width: 400px; /* Adjust as per your design */
-    height: 400px; /* Adjust as per your design */
+    width: 400px;
+    height: 400px;
     perspective: 1000px; /* Perspective for 3D effect */
 }
 
@@ -14,7 +14,7 @@
     height: 100%;
     display: flex;
 
-    transform-style: preserve-3d; /* Preserve 3D transformation */
+    transform-style: preserve-3d; 
     transition: transform 0.8s;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -134,4 +134,22 @@
     background-color: #E59C92;
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+@media screen and (max-width: 830px) {
+    .title {
+        font-size: 80%;
+    }
+
+    .skill {
+        font-size: 60%;
+    }
+
+    .desc {
+        font-size: 60%;
+    }
+
+    .link {
+        font-size: 60%;
+    }
 }
