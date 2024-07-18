@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getImageUrl } from '../../utils';
 import  styles from './ProjectCard.module.css';
 
-const ProjectCard = ({ project : {title, imageSrc, description, skills, demo, source}}) => {
+const ProjectCard = ({ project : {title, imageSrc, descriptions, skills, source}}) => {
 
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -31,11 +31,17 @@ const ProjectCard = ({ project : {title, imageSrc, description, skills, demo, so
                     </ul>
                 </div>
                 <div className={styles.back}>
-                    <p className={styles.description}>{description}</p>
+                    <ul className={styles.descriptions}>
+                        {descriptions.map((desc, id) => (
+                            <li key={id} className={styles.desc}>
+                                {desc}
+                            </li>
+                        ))}
+                    </ul>
                     <div className={styles.links}>
-                        <a href={demo} className={styles.link} target="_blank" rel="noopener noreferrer">
+                        {/* <a href={demo} className={styles.link} target="_blank" rel="noopener noreferrer">
                             Demo
-                        </a>
+                        </a> */}
                         <a href={source} className={styles.link} target="_blank" rel="noopener noreferrer">
                             Source
                         </a>
@@ -48,3 +54,14 @@ const ProjectCard = ({ project : {title, imageSrc, description, skills, demo, so
 };
 
 export default ProjectCard;
+
+// NEXT JSON PROJECT
+// ,
+// {
+//   "title": "Book Recommender",
+//   "imageSrc": "projects/DreamyReads.png",
+//   "descriptions":[ "Pending Project"],
+//   "skills": ["React", "Express", "Node", "Sass"],
+//   "demo": "https://www.example.com",
+//   "source": "https://www.github.com"
+// }

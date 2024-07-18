@@ -81,12 +81,12 @@
     margin-top: 8px;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    align-items: flex-start;
     gap: 6px;
     list-style: none;
 }
-
 .skill {
     font-size: 20px;
     font-weight: 400;
@@ -98,6 +98,13 @@
 
 .description {
     font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.desc {
+    font-size: 18px;
     font-weight: 400;
     color: var(--color-text);
     line-height: 1.6;
