@@ -9,11 +9,12 @@
 
 /* learn to make global titles for titles etc */
 .title {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     font-family: var(--font-prosto-one);
     letter-spacing: 1.75px;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 .projects {
