@@ -4,6 +4,8 @@ import { getImageUrl } from '../../utils';
 import { MdEmail } from "react-icons/md";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoMenu, IoCloseOutline } from "react-icons/io5";
+
 
 
 const Navbar = () => {
@@ -13,37 +15,26 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.left}>
                 <a className={styles.title}  href="/">Audrey Del Rosario</a>
-                    <img className={styles.menuBtn} 
-                    src={ 
-                        menuOpen? 
-                        getImageUrl('nav/closeIcon.png') 
-                        : 
-                        getImageUrl('nav/menuIcon.png')} 
-                        alt="menu-button" 
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        />
                     <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                         onClick={() => setMenuOpen(false)}
                     >
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
+                        <li> <a href="#about">About</a> </li>
 
-                        <li>
-                            <a href="#experience">Experience</a>
-                        </li>
+                        <li> <a href="#experience">Experience</a> </li>
 
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
+                        <li> <a href="#projects">Projects</a> </li>
 
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li> <a href="#contact">Contact</a> </li>
                     </ul>
+                    
             </div>
 
             <div className={styles.right}>
+                <div className={styles.menuBtn} onClick={() => setMenuOpen(!menuOpen)}>
+                    {
+                        menuOpen? <IoCloseOutline className={styles.icon} /> : <IoMenu className={styles.icon}/>
+                    }
+                </div>
                 <a href="mailto:delrosaa@tcd.ie"
                     target="_blank" rel="noopener noreferrer"
                 >
@@ -59,6 +50,7 @@ const Navbar = () => {
                 >
                     <FaGithubSquare className={styles.link}/>
                 </a>
+                
             </div>
             
         </nav>

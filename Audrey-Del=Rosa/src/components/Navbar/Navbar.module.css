@@ -59,7 +59,15 @@
 
 .menuBtn {
     display: none;
-    color: #000;
+}
+
+.menuBtn:hover {
+    color: var(--color-dark);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
 }
 
 .right {
@@ -76,8 +84,10 @@
 
 @media screen and (max-width: 830px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .menu {
@@ -93,18 +103,24 @@
     .menuBtn {
         display: block;
         cursor: pointer;
+        color: var(--color-text);
+
     }
 
     .menuItems {
         display: none;
+        position: absolute;
+        top: 10px;
+        right: 45%;
         flex-direction: column;
         align-items: center;
         gap: 13px;
         border-radius: 10px;
         background: rbg(25,25,109);
-        background: linear-gradient(0deg, rgba(25,55,109, 0.2), rgba(25,55,109,1) 100%);
+        background: linear-gradient(0deg, #f9b5acc8, #ffdca1e9 100%);
         padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0,0,0,0, 0.25);
+        padding-left: 50px;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0, 0.4);
     }
 
     .menuOpen {
