@@ -7,6 +7,7 @@ import { IoMenu, IoCloseOutline } from "react-icons/io5";
 import { Tooltip } from 'react-tooltip'
 import { IoIosPaper } from "react-icons/io";
 import { TbMailOpenedFilled } from "react-icons/tb";
+import { getImageUrl } from '../../utils';
 
 
 const Navbar = () => {
@@ -66,7 +67,7 @@ const Navbar = () => {
                 </a>
                 <Tooltip id="github-tip"/>
 
-                <a href="../../assets/cv/ADR-CV.pdf"
+                <a href='/cv/ADR-CV.pdf'
                     target="_blank" rel="noopener noreferrer"
                     data-tooltip-id="cv-tip"
                     data-tooltip-content="my cv"
