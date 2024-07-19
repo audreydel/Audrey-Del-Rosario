@@ -30,7 +30,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* gap: 11px; */
+    gap: 11px;
 }
 
 .skill {
