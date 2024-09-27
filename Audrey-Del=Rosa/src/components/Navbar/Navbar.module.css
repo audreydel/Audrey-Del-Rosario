@@ -22,6 +22,7 @@
     text-decoration: none;
     color: var(--color-text);
     font-family: var(--font-prosto-one);
+    width: fit-content;
 }
 
 .title:hover {

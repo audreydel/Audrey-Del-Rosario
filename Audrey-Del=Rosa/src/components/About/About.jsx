@@ -7,7 +7,7 @@ import { FaLaptopCode } from "react-icons/fa";
 const About = () => {
     return (
         <section className={styles.container} id="about" >
-            <h2 className={styles.title}> ⋆ a little bit about me ⋆</h2>
+            <h2 className={styles.title}>about me</h2>
             <div className={styles.content}>
                 <ul className={styles.aboutItems}>
                     <li className={styles.aboutItem}>

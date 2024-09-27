@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 const Experience = () => {
     return (
         <section className={styles.container}  id='experience' >
-            <h2 className={styles.title}>⋆ My Experience ⋆</h2>
+            <h2 className={styles.title}>My Experience</h2>
             <div className={styles.content}>
                 <div className={styles.skills}>
                     {skills.map((skill, id) => {
