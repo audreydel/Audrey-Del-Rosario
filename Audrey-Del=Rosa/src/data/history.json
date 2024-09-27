@@ -1,23 +1,39 @@
 [
     {
-      "role": "Software Engineer & UI Design Intern",
+      "role": "Java Demonstrator",
+      "organisation": "Trinity College Dublin",
+      "startDate": "Sep 2024",
+      "endDate": "Present",
+      "experiences": [
+        "Enhanced student understanding of coding principles by facilitating lab and tutorial sessions, providing assistance in debugging, and promoting best coding practices."],
+      "imageSrc": "history/trinity.png"
+    },
+    {
+      "role": "AWS Cloud Women Mentee ",
       "organisation": "Dell Technologies",
       "startDate": "Jun 2024",
       "endDate": "Present",
       "experiences": [
-        "Developing & designing a workbench platform consolidating 6 distinct applications into 1 unified space.",
-        "Significantly enhanced navigation process & overall user experience.",
-        "Technologies used: Angular | Figma"],
+        "Cultivated professional growth through personalised mentorship, receiving valuable insights and guidance from an experienced mentor at Amazon."],
+      "imageSrc": "history/aws.png"
+    },
+    
+    {
+      "role": "Software Engineering Intern",
+      "organisation": "Dell Technologies",
+      "startDate": "Jun 2024",
+      "endDate": "Aug 2024",
+      "experiences": [
+        "Implemented the integration of multiple applications into a cohesive system by designing a workbench platform using Figma, improving overall workflow efficiency."],
       "imageSrc": "history/dell.svg"
     },
     {
-      "role": "Teaching Asssistant",
+      "role": "Coding Instructor",
       "organisation": "CoderDojo",
       "startDate": "Nov 2023",
       "endDate": "Present",
       "experiences": [
-        "Lead and support sessions in Game Development, Web Development, Python, and Scratch for a diverse group of young learners.", 
-        "Tailoring material and teaching methods accommodating varied learning styles."
+        "Lead and supported lessons in Scratch for students aged 8-14."
       ],
       "imageSrc": "history/coder-dojo.png"
     },
@@ -37,8 +53,7 @@
       "startDate": "Nov 2023",
       "endDate": "Jan 2024",
       "experiences": [
-        "Designed and deployed a website for Learn Local, a non-profit organisation providing healthy and sustainable cooking courses.",
-        "Technologies used: React (Front-end) | SQL (Database Management)"
+        "Designed and developed a website for a non-profit organisation using React and SQL."
       ],
       "imageSrc": "history/projectblue.png"
     }

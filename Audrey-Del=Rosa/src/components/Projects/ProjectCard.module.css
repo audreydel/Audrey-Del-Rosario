@@ -137,8 +137,12 @@
 }
 
 @media screen and (max-width: 830px) {
+    .card {
+        height: 60%;
+    }
+
     .title {
-        font-size: 80%;
+        font-size: 100%;
     }
 
     .skill {
