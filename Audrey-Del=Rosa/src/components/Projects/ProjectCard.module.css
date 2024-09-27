@@ -144,6 +144,10 @@
     .title {
         font-size: 100%;
     }
+    
+    .text h2{
+        font-size: 30px;
+    }
 
     .skill {
         font-size: 100%;

@@ -2,7 +2,6 @@
 
 .container {
     position: relative;
-    /* background-color: #9ab58c36; */
     border-radius: 15px;
     padding: 73px;
     margin-top: 129px;
@@ -31,16 +30,13 @@
 .aboutItems {
     color: var(--color-text);
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-
 }
 
 .aboutItem {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     border-radius: 20px;
     list-style: none;
@@ -48,34 +44,32 @@
     padding: 25px;
     background-image: 
         linear-gradient(90deg, rgba(225, 221, 161, 0.92) 0%, 
-        rgba(255,255,255, 0)100%
-        );
+        rgba(255,255,255, 0) 100%);
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background-size 0.5s;
 }
 
-
 .aboutItem:hover {
     background-size: 100% 100%;
 }
+
 .aboutItemIconLaptop {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Space below the icon */
 }
-
 
 .aboutItemIconNetwork {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Space below the icon */
 }
 
 .aboutItemIconSew {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Space below the icon */
 }
 
 .aboutItem h3 {
@@ -89,7 +83,7 @@
     margin-bottom: 0px;
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width: 830px) {
     .container {
         background-color: transparent;
         padding-left: 0;
@@ -105,6 +99,7 @@
 
     .title {
         text-align: center;
+        font-size: 30px;
     }
 
     .aboutImage {
@@ -115,18 +110,15 @@
         margin-top: 29px;
     }
 
-    /* .aboutItem {
-        padding-left: 0;
-        padding-right: 0;
-    } */
     .aboutItem {
         flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
-        text-align: center; /* Center text, or change as needed */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
     }
 
-    .aboutItemIcon, aboutItemIconNetwork, aboutItemIconSew {
+    .aboutItemIconLaptop,
+    .aboutItemIconNetwork,
+    .aboutItemIconSew {
         margin-bottom: 0.5rem; /* Space between icon and text */
     }
-
 }
