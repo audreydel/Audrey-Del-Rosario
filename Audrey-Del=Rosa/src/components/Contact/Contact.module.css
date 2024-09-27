@@ -40,7 +40,6 @@
     align-items: center;
     margin: 0;
     gap: 2px;
-
 }
 
 .link a {
@@ -59,20 +58,32 @@
 
 @media screen and (max-width: 830px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
         gap: 23px;
+        align-items: center; /* Center align the items */
     }
 
     .text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center text vertically */
         text-align: center;
     }
+
     .links {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: start;
+        align-items: center; /* Center the links */
+        text-align: center; /* Center text in links */
+        gap: 15px; /* Add some space between links */
+    }
+
+    .link {
+        justify-content: center; /* Center items in each link */
+        width: 100%; /* Ensure links take full width */
+    }
+
+    .icon {
+        margin-right: 5px; /* Reduce margin for better spacing */
     }
 }
