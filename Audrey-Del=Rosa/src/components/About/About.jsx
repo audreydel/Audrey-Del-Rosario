@@ -11,7 +11,7 @@ const About = () => {
             <div className={styles.content}>
                 <ul className={styles.aboutItems}>
                     <li className={styles.aboutItem}>
-                        <div>
+                        <div className={styles.aboutItemIcon}>
                             <FaLaptopCode className={styles.aboutItemIconLaptop}/>
                         </div>
                         
@@ -19,17 +19,15 @@ const About = () => {
                             <h3>Work & College </h3>
                             <ul>
                                 <li>
-                                I am currently a Software Engineering Intern at Dell Technologies. 
+                                I was a recent a Software Engineering Intern at Dell Technologies. 
                                 </li>
                                 <li>
                                 I am an incoming 3rd year Computer Science & Business 
                                 student at Trinity College Dublin. 
                                 </li>
                                 <li>
-                                Some languages I've worked with are: 
-                                    <li>
-                                    Java | Python | C++ | JavaScript | TypeScript
-                                    </li>
+                                Some languages I've worked with are Java, Python, C++ , JavaScript 
+                                 
                                 </li>
                             </ul>
                             

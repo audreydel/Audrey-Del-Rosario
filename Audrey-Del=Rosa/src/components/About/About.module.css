@@ -31,7 +31,8 @@
 .aboutItems {
     color: var(--color-text);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
 
@@ -39,10 +40,11 @@
 
 .aboutItem {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     border-radius: 20px;
     list-style: none;
+    margin: 1rem;
     padding: 25px;
     background-image: 
         linear-gradient(90deg, rgba(225, 221, 161, 0.92) 0%, 
@@ -113,9 +115,18 @@
         margin-top: 29px;
     }
 
-    .aboutItem {
+    /* .aboutItem {
         padding-left: 0;
         padding-right: 0;
+    } */
+    .aboutItem {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        text-align: center; /* Center text, or change as needed */
+    }
+
+    .aboutItemIcon, aboutItemIconNetwork, aboutItemIconSew {
+        margin-bottom: 0.5rem; /* Space between icon and text */
     }
 
 }

@@ -161,21 +161,22 @@
     list-style: disc;
     margin-left: 17px;
 }
-
 @media screen and (max-width: 830px) {
-
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: 5%;
         margin-right: 5%;
+        height: max-content;
     }
+
     .content {
         flex-direction: column;
         align-items: center;
         gap: 34px;
     }
+
     .title {
         text-align: center;
     }
@@ -188,39 +189,46 @@
     }
 
     .history {
-        width: 100%;
+        width: 100%; /* Ensure history section takes full width */
         gap: 9px;
         padding: 20px;
     }
 
     .historyItem {
         display: flex;
-        flex-direction: column;
-      
+        flex-direction: column; /* Change to column for stacking */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Ensure full width */
+        padding: 20px; /* Add padding for spacing */
     }
 
+    .historyItem img {
+        width: 70px; /* Maintain image size */
+        height: 70px; /* Maintain image size */
+    }
 
     .historyItemDetails h3 {
-        text-align: center;
+        text-align: center; /* Center title */
     }
 
     .subtitle {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center; /* Center align */
         gap: 5px;
     }
 
-    .subtitle h4, p {
-        align-self: center;
+    .subtitle h4,
+    .subtitle p {
+        align-self: center; /* Center subtitle text */
     }
 
     .historyItemDetails li {
-        text-align: left;
+        text-align: left; /* Keep text aligned left */
     }
 
     .divider {
-        display: none;
+        display: none; /* Hide divider */
     }
 }
